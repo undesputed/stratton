@@ -1,0 +1,19 @@
+.service-banner{
+    perspective: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/img/pexels-negative-space-34587.jpg');
+    height: 25em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.banner-content h1{
+    font-size: 5.9rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
