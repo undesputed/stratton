@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./book-cards.css">
     <link rel="stylesheet" href="./timeline.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -33,6 +33,10 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
+        }
+
+        .scrollmenu {
+            overflow-x: scroll;
         }
     </style>
 </head>
@@ -160,22 +164,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- <div class="w3-content w3-padding-64 container mt-3" style="margin: 20px auto;">
-        <h2>Filterable List</h2>
-        <p>Type something in the input field to search the list for specific items:</p>
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
-        <br>
-        <ul class="list-group" id="myList">
-            <li class="list-group-item">First item</li>
-            <li class="list-group-item">Second item</li>
-            <li class="list-group-item">Third item</li>
-            <li class="list-group-item">Fourth</li>
-        </ul>
-    </div> -->
-
-
     <main>
         <div class="album py-5">
             <div class="container">
@@ -183,11 +171,12 @@
                 <p>Type something in the input field to search the list for specific items:</p>
                 <div class="w3-center" style="display: flex;">
                     <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                    <button class="btn info" id="filter" style="margin-left: -55px; height: 40px;"><i class="fa fa-filter"></i></button>
+                    <button class="btn info" id="filter" style="margin-left: -55px; height: 40px;"><i
+                            class="fa fa-filter"></i></button>
                 </div>
                 <div class="filter-content" hidden>
-                    <input type="text" placeholder="Author Name"/>
-                    <input type="text" placeholder="Book Name"/>
+                    <input type="text" placeholder="Author Name" />
+                    <input type="text" placeholder="Book Name" />
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                     <label for="vehicle1"> I have a bike</label><br>
                     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -197,9 +186,451 @@
 
                 </div>
                 <br>
+
+                <div class="container">
+                    <div class="card list-group-item">
+                        <div class="card-body">
+                            <h1 class="card-title">Action</h1>
+                            <div class="container">
+                                <div class="scrollmenu">
+                                    <div class="row">
+                                        <div class="col-md-4 scrollCard">
+                                            <div class="card">
+                                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                    xmlns="http://www.w3.org/2000/svg" role="img"
+                                                    aria-label="Placeholder: Thumbnail"
+                                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                    <title>Placeholder</title>
+                                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%"
+                                                        y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                                </svg>
+
+                                                <div class="card-body">
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing
+                                                        elit,
+                                                        sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim
+                                                        ad minim
+                                                        veniam,
+                                                    </p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">View</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                        </div>
+                                                        <small class="text-muted">9 mins</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                    xmlns="http://www.w3.org/2000/svg" role="img"
+                                                    aria-label="Placeholder: Thumbnail"
+                                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                    <title>Placeholder</title>
+                                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%"
+                                                        y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                                </svg>
+
+                                                <div class="card-body">
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing
+                                                        elit,
+                                                        sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim
+                                                        ad minim
+                                                        veniam,
+                                                    </p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">View</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                        </div>
+                                                        <small class="text-muted">9 mins</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                    xmlns="http://www.w3.org/2000/svg" role="img"
+                                                    aria-label="Placeholder: Thumbnail"
+                                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                    <title>Placeholder</title>
+                                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%"
+                                                        y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                                </svg>
+
+                                                <div class="card-body">
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing
+                                                        elit,
+                                                        sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim
+                                                        ad minim
+                                                        veniam,
+                                                    </p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="btn-group">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">View</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                        </div>
+                                                        <small class="text-muted">9 mins</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card list-group-item">
+                        <div class="card-body">
+                            <h1 class="card-title">Action</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">9 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">9 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">9 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card list-group-item">
+                        <div class="card-body">
+                            <h1 class="card-title">Action</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">100 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">23 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">82 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card list-group-item">
+                        <div class="card-body">
+                            <h1 class="card-title">Mystery</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">8 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">9 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+
+                                            <div class="card-body">
+                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim
+                                                    veniam,
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">10 mins</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Separattion line for the old cards -->
+
+
+
+
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="mylist">
                     <div class="col list-group-item">
-                        <div class="card shadow-sm">
+                        <div class="card">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -209,7 +640,11 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam,
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -231,8 +666,11 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Meet the needs of the modern student and drive outcomes with a student engagement
+                                    platform that creates personal, mobile experiences that resonate throughout the
+                                    students' academic journey.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -254,8 +692,89 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    We start by understanding your institution’s goals & problems, and match them with
+                                    targeted solutions
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col list-group-item">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Our team is with you from day zero - helping you navigate & optimize the ways you
+                                    use our products
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col list-group-item">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Our platform integrates with existing campus technology to unify student experience
+                                    without heavy IT overhead
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col list-group-item">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Sunlimetech is an advanced and proactive at the app development and providing you
+                                    all the ultimate software development services that you need. Sunlimetech ensure to
+                                    offer you all the required & ultimate services meeting the advanced deadlines and
+                                    requirements of the field. We believe in providing the ultimate services with
+                                    quality and meeting all the deadlines, application development industry is at its
+                                    peak and hitting the new dimensions rapidly.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -278,8 +797,10 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Pair exquisite Mohawk Layflat paper with the photos you love for a timeless
+                                    keepsake.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -301,78 +822,10 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col list-group-item">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col list-group-item">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col list-group-item">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Upgrade your keepsake Layflat book with exceptional, archival-quality Mohawk paper,
+                                    designed to be held and enjoyed for generations to come.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -394,8 +847,12 @@
                             </svg>
 
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Our free design tool offers complete creative control and a helping hand when you
+                                    need it. Use the Quick Design option to create your book in three easy steps, try
+                                    our customizable templates to get a head start, or design your own layouts from
+                                    scratch.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -413,7 +870,76 @@
     </main>
 
 
+    <section class="footer4 cid-sq9yA7NvTs" once="footers" id="footer4-s">
 
+
+
+        <div class="container">
+            <div class="row mbr-white">
+                <div class="col-6 col-lg-3">
+                    <div class="media-wrap col-md-8 col-12">
+                        <a href="https://mobiri.se/">
+                            <img src="./images/revised-3-3.svg" alt="Mobirise">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>About</strong>
+                    </h5>
+                    <p class="mbr-text mbr-fonts-style mb-4 display-4">
+                        Mobirise is a free offline app for
+                        Windows and Mac to easily create small/medium websites, landing pages, online resumes and
+                        portfolios.</p>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+                        <strong>Follow Us</strong>
+                    </h5>
+                    <div class="social-row display-7">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-facebook"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-twitter"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-instagram"></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Mobirise Help</strong>
+                    </h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap">Help Center</li>
+                        <li class="mbr-text item-wrap">Mobirise Forums</li>
+                        <li class="mbr-text item-wrap">Mobirise Kit</li>
+                        <li class="mbr-text item-wrap">Our site</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Navigation</strong>
+                    </h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap">Home</li>
+                        <li class="mbr-text item-wrap">Services</li>
+                        <li class="mbr-text item-wrap">Gallery</li>
+                        <li class="mbr-text item-wrap">About Us</li>
+                        <li class="mbr-text item-wrap">Contact Us</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script>
         $(document).ready(function () {
@@ -423,8 +949,8 @@
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-            
-            $("#filter").on("click", function(){
+
+            $("#filter").on("click", function () {
                 $(".filter-content").toggle();
             });
         });

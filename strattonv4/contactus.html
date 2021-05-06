@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +13,180 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="./bootstrap/css/faq.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./book-cards.css">
     <link rel="stylesheet" href="./timeline.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+<style>
+    .page-banner__picture--4 {
+        background-image: url(./images/pexels-david-sun-955081.jpg);
+    }
+
+    .page-banner {
+        height: 100%;
+        background-blend-mode: screen;
+        background-position: 50%;
+        background-size: cover;
+        position: relative;
+        z-index: 10;
+        color: #fff;
+        padding: 180px 0;
+    }
+
+    .fullscreen-hero:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: -1;
+    }
+
+    .page-banner__title {
+        color: #fff;
+        font-family: GothamPro-Medium, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #111;
+        margin: 1.414em 0 .5em;
+        font-weight: inherit;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    h2 {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    body {
+        font-family: GothamPro-Regular, serif;
+        font-weight: 400;
+        line-height: 1.8;
+        font-size: 18px;
+        overflow-y: hidden;
+        /* Hide vertical scrollbar */
+        overflow-x: hidden;
+    }
+
+    .section {
+        padding: 90px 0;
+        position: relative;
+    }
+
+    form {
+        display: block;
+        margin-top: 0em;
+    }
+
+    .clearfix::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    .btn-contact {
+        font-family: GothamPro-Medium;
+        font-size: 13px;
+        padding: 12px 30px;
+        border-radius: 500px;
+        border: 2px solid #111;
+        background: #111;
+        color: #fff;
+        float: right;
+    }
+
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .37rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15x ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    button {
+        appearance: auto;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+        box-sizing: border-box;
+        margin: 0em;
+        font: 400 13.3333px Arial;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+    label {
+        font-family: GothamPro-Bold, sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 0rem;
+    }
+
+    p {
+        color: #707070;
+        margin-bottom: 1em;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+</style>
+
 <body>
     <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
+
         <nav class="navbar navbar-dropdown navbar-expand-lg">
             <div class="container">
                 <div class="navbar-brand">
@@ -29,60 +195,273 @@
                             <img src="./images/revised-3-3.svg" alt="" style="height: 3.8rem;">
                         </a>
                     </span>
-                    
+
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <div class="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
-                         <span></span>
+                        <span></span>
                     </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="./index.html">
-                        <span class="mobi-mbri mobi-mbri-home mbr-iconfont mbr-iconfont-btn"></span>Home</a></li><li class="nav-item dropdown">
-                            <a class="nav-link link text-black dropdown-toggle display-4" href="./services.html" data-toggle="dropdown-submenu" aria-expanded="false">
-                                <span class="mobi-mbri mobi-mbri-cash mbr-iconfont mbr-iconfont-btn"></span>Services</a><div class="dropdown-menu">
-                                    <a class="text-black dropdown-item display-4" href="">New Item</a><a class="text-black dropdown-item display-4" href="#" aria-expanded="true">New Item</a>
-                                    <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">New Item</a>
-                                </div> 
-                            </li> 
-                            <li class="nav-item"><a class="nav-link link text-black display-4" href="./gallery.html">
-                                <span class="mobi-mbri mobi-mbri-camera mbr-iconfont mbr-iconfont-btn"></span>Gallery</a>
-                            </li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href=""><span class="mobi-mbri mobi-mbri-users mbr-iconfont mbr-iconfont-btn"></span>
-                                About us</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href=""><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
-                                Contact</a></li></ul>
-                    
-                    
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href="./index.html">
+                                <span class="mobi-mbri mobi-mbri-home mbr-iconfont mbr-iconfont-btn"></span>Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link text-black dropdown-toggle display-4" href="./services.html"
+                                data-toggle="dropdown-submenu" aria-expanded="false">
+                                <span class="mobi-mbri mobi-mbri-cash mbr-iconfont mbr-iconfont-btn"></span>Services</a>
+                            <div class="dropdown-menu">
+                                <a class="text-black dropdown-item display-4" href="">New Item</a><a
+                                    class="text-black dropdown-item display-4" href="#" aria-expanded="true">New
+                                    Item</a>
+                                <a class="text-black dropdown-item display-4" href="#" aria-expanded="false">New
+                                    Item</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href="./gallery.html">
+                                <span
+                                    class="mobi-mbri mobi-mbri-camera mbr-iconfont mbr-iconfont-btn"></span>Gallery</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href=""><span
+                                    class="mobi-mbri mobi-mbri-users mbr-iconfont mbr-iconfont-btn"></span>
+                                About us</a></li>
+                        <li class="nav-item"><a class="nav-link link text-black display-4" href=""><span
+                                    class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+                                Contact</a></li>
+                    </ul>
+
+
                 </div>
             </div>
         </nav>
-    
+
     </section>
 
 
-    <section class="lazyload-bg about__banner" data-bg="url(https://stratton-press.com/wp-content/themes/strattonpress/assets/images/banner/about-us.jpg)" data-was-processed="true" style="height: 700px; background-image: linear-gradient(rgba(185, 212, 197, .8) , rgba(94, 125, 108, .8) ), url('https://stratton-press.com/wp-content/themes/strattonpress/assets/images/banner/about-us.jpg'); color: black;     position: relative;
-    font-family: 'Crimson Text', serif;
-    color: #fff;
-    height: 700px;
-    background-color: #424242;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;">
-        <div class="about__banner-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <h1 class="about__banner-title" style="font-size: 110px; margin: 0; text-align: center; margin-block-start: 0.83em; margin-block-end: 0.3em; margin-inline-start: 0px; margin-inline-end:0px; font-weight: bold;">
-                <span style="position: relative;">Contact Us</span>
-            </h1>
-            <p class="about__banner-intro" style="font-size: 16px; margin: 0 auto; font-family: 'Montserrat'; line-height: 1.5; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">
-                Here at Stratton Press, we like to put our focus on creation a good realtionship with our authors, knowing them and their work better, then creating the results they need. We are committed to excellence int he written art, so expect to work with only the best talents in the industry.
-            </p>
+    <div class="page-banner page-banner__picture--4 fullscreen-hero">
+        <div class="text-center container" style="text-align: center !important;">
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;">
+                <div class="col-md-6 offset-md-3">
+                    <div>
+                        <h3 class="page-banner__title">Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row" style="padding:0 100px;">
+            <div class="column">
+                <div class="container">
+                    <h2>Frequently Asked Questions</h2>
+ 
+                    <div class="accordion">
+                      <div class="accordion-item">
+                        <a>What can JavaScript Do?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>How JavaScript Can Modify HTML and CSS Values?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>What Is SVG?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>Is FAQ Section Matters In Website?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>How To Create a Light FAQ Element?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>What can JavaScript Do?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>How JavaScript Can Modify HTML and CSS Values?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>What Is SVG?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>Is FAQ Section Matters In Website?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <a>How To Create a Light FAQ Element?</a>
+                        <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div style="width: 45rem;">
+                    <div class="container card-body">
+                        <div class="card-title text-area mb40 w3-content w3-center" style="margin-bottom: 40px;">
+                            <h2 class="secondary-header mt0">We'd love to hear from you!</h3>
+                            <p>Fill out the form below, and someone will get in touch with you.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 offset-md-2">
+                                <div>
+                                    <form name="contact" method="post" class="contact-form">
+                                        <div class="position-relative form-group">
+                                            <input type="text" name="name" value placeholder="Name"
+                                                class="form-control" />
+                                            <div class="invalid=feedback"></div>
+                                        </div>
+                                        <div class="position-relative form-group">
+                                            <input type="text" name="phone" value placeholder="Contact Number"
+                                                class="form-control" />
+                                            <div class="invalid=feedback"></div>
+                                        </div>
+                                        <div class="position-relative form-group">
+                                            <input type="text" name="email" value placeholder="Email Address"
+                                                class="form-control" />
+                                            <div class="invalid=feedback"></div>
+                                        </div>
+                                        <div class="position-relative form-group">
+                                            <textarea name="message" placeholder="Message"
+                                                class="form-control"></textarea>
+                                            <div class="invalid=feedback"></div>
+                                        </div>
+                                        <div class="clearfix position-relative form-group" style="position: relative;">
+                                            <button type="submit" class="btn btn-default btn-contact">Send
+                                                Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for style="font-size: 1.999rem;">Contact Number</label>
+                                    <p class="form-control-static">
+                                        PH: 340-8466 <br />
+                                        US: (302) 367-7693
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for style="font-size: 1.999rem;">Email Address</label>
+                                    <p class="form-control-static">
+                                        publish@inksharedsolutions.com
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for style="font-size: 1.999rem;">Location</label>
+                                    <p class="form-control-static">
+                                        Unit 608, JESA-ITC Bldg. Mango Ave. Cebu City, Philippines 6000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer4 cid-sq9yA7NvTs" once="footers" id="footer4-s">
+
+
+
+        <div class="container">
+            <div class="row mbr-white">
+                <div class="col-6 col-lg-3">
+                    <div class="media-wrap col-md-8 col-12">
+                        <a href="https://mobiri.se/">
+                            <img src="./images/revised-3-3.svg" alt="Mobirise">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>About</strong>
+                    </h5>
+                    <p class="mbr-text mbr-fonts-style mb-4 display-4">
+                        Mobirise is a free offline app for
+                        Windows and Mac to easily create small/medium websites, landing pages, online resumes and
+                        portfolios.</p>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
+                        <strong>Follow Us</strong>
+                    </h5>
+                    <div class="social-row display-7">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-facebook"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-twitter"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://twitter.com/mobirise" target="_blank">
+                                <span class="mbr-iconfont socicon socicon-instagram"></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Mobirise Help</strong>
+                    </h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap">Help Center</li>
+                        <li class="mbr-text item-wrap">Mobirise Forums</li>
+                        <li class="mbr-text item-wrap">Mobirise Kit</li>
+                        <li class="mbr-text item-wrap">Our site</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                        <strong>Navigation</strong>
+                    </h5>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="mbr-text item-wrap">Home</li>
+                        <li class="mbr-text item-wrap">Services</li>
+                        <li class="mbr-text item-wrap">Gallery</li>
+                        <li class="mbr-text item-wrap">About Us</li>
+                        <li class="mbr-text item-wrap">Contact Us</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </section>
-
-    <section class="w3-content w3-padding">
-
-    </section>
 </body>
+<script src="./bootstrap/js/faq.js"></script>
 </html>
